@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 2px solid #a0a0a0;
+            padding: 12px 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .main-title {
+            background-color: #ffffff;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding: 15px;
+        }
+        .time-header {
+            background-color: #e6e6e6;
+            color: #333;
+        }
+        .day-header {
+            background-color: #e6e6e6;
+            color: #333;
+            text-align: center;
+        }
+        .sub1 { color: #0056b3; }
+        .sub2 { color: #b30000; }
+        .sub3 { color: #5b00b3; }
+        .sub4 { color: #004d00; }
+        .sub5 { color: #b30000; }
+        .lunch {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            background-color: #e6e6e6;
+            letter-spacing: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+       
+        <tr>
+            <th colspan="10" class="main-title">COLLEGE TIME TABLE</th>
+        </tr>
+        
+        
+        <tr class="time-header">
+            <td></td>
+            <td>8:30-9:30</td>
+            <td>9:30-10:30</td>
+            <td>10:30-11:30</td>
+            <td>11:30-12:30</td>
+            <td>12:30-2:00</td>
+            <td>2:00-3:00</td>
+            <td>3:00-4:00</td>
+            <td colspan="2">4:00-5:00</td>
+        </tr>
+
+      
+        <tr>
+            <td class="day-header">MONDAY</td>
+            <td>-</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td rowspan="6" class="lunch">LUNCH</td>
+            <td class="sub4">SUB4</td>
+            <td class="sub5">SUB5</td>
+            <td colspan="2">COUNSELLING CLASS</td>
+        </tr>
+
+        
+        <tr>
+            <td class="day-header">TUESDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td>-</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub2">SUB2</td>
+            <td colspan="2">LIBRARY</td>
+        </tr>
+
+        
+        <tr>
+            <td class="day-header">WEDNESDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub2">SWA</td>
+            <td>-</td>
+            <td colspan="3" class="lab">LAB</td>
+        </tr>
+
+        
+        <tr>
+            <td class="day-header">THURSDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td>-</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub2">SUB2</td>
+            <td colspan="2">LIBRARY</td>
+        </tr>
+
+        
+        <tr>
+            <td class="day-header">FRIDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td>-</td>
+            <td class="sub4">SUB4</td>
+            <td class="sub5">SUB5</td>
+            <td colspan="2">LIBRARY</td>
+        </tr>
+
+        
+        <tr>
+            <td class="day-header">SATURDAY</td>
+            <td class="sub1">SUB1</td>
+            <td colspan="3" class="seminar">SEMINAR</td>
+            <td class="sub4">SUB4</td>
+            <td class="sub5">SUB5</td>
+            <td colspan="2">LIBRARY</td>
+        </tr>
+    </table>
+
+</body>
+</html>

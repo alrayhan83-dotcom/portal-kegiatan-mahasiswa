@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Kegiatan Mahasiswa</title>
+    <!-- Penghubung ke External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Portal Kegiatan Mahasiswa</h1>
+        <p>Pusat informasi dan pendaftaran kegiatan kampus</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#jadwal">Jadwal</a></li>
+            <li><a href="#pendaftaran">Pendaftaran</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container Utama -->
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero" id="beranda">
+            <h2>Selamat Datang di Portal Kegiatan Mahasiswa</h2>
+            <p>Temukan berbagai kegiatan menarik untuk mengembangkan soft skills dan hard skills kamu di kampus.</p>
+        </section>
+
+        <!-- Card Section (Minimal 3 Card dengan class reusable) -->
+        <section id="kegiatan">
+            <h2>Kegiatan Mendatang</h2>
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <article class="card">
+                    <h3>Workshop Web Development</h3>
+                    <p>Belajar membuat website interaktif bersama praktisi industri.</p>
+                </article>
+                <!-- Card 2 -->
+                <article class="card">
+                    <h3>Seminar AI & Data Science</h3>
+                    <p>Mengenal tren kecerdasan buatan dan pengolahan data masa kini.</p>
+                </article>
+                <!-- Card 3 -->
+                <article class="card">
+                    <h3>Pelatihan Networking</h3>
+                    <p>Praktik langsung konfigurasi jaringan komputer dan router.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Table Section (Header, border, padding, zebra row) -->
+        <section id="jadwal">
+            <h2>Jadwal Kegiatan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Kegiatan</th>
+                        <th>Tanggal</th>
+                        <th>Lokasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Workshop Web Development</td>
+                        <td>15 November 2026</td>
+                        <td>Lab Komputer A</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Seminar AI & Data Science</td>
+                        <td>22 November 2026</td>
+                        <td>Auditorium Utama</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pelatihan Networking</td>
+                        <td>29 November 2026</td>
+                        <td>Lab Jaringan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section (Label, input, select, textarea, button, focus) -->
+        <section id="pendaftaran">
+            <h2>Form Pendaftaran Kegiatan</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kegiatan-pilih">Pilih Kegiatan:</label>
+                    <select id="kegiatan-pilih" name="kegiatan">
+                        <option value="web">Workshop Web Development</option>
+                        <option value="ai">Seminar AI & Data Science</option>
+                        <option value="net">Pelatihan Networking</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="catatan">Catatan Tambahan:</label>
+                    <textarea id="catatan" name="catatan" rows="4" placeholder="Tuliskan catatan (opsional)"></textarea>
+                </div>
+
+                <button type="submit">Daftar Sekarang</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Portal Kegiatan Mahasiswa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
